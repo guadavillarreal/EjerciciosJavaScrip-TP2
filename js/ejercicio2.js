@@ -25,27 +25,27 @@ if (!isNaN(nota)) {
         //alert(nota);
         switch (nota) {
                 case 0 || 1 || 2 :
-                        alert("Muy deficiente");
+                        alert(nota+"Muy deficiente");
                         break;
                 case 3 || 4:
-                        alert("Insuficiente");
+                        alert(nota+"Insuficiente");
                         break;
                 case 5 || 6:
-                        alert("Suficiente");
+                        alert(nota+"Suficiente");
                         break;
                 case 7:
-                        alert("Bien");
+                        alert(nota+"Bien");
                         break;
                 case 8 || 9:
-                        alert("Notable");
+                        alert(nota+"Notable");
                         break;
                 case 10:
-                        alert("Sobresaliente");
+                        alert(nota+"Sobresaliente");
                         break;
                 default:
-                        alert("Ingreso un nùmero erroneo");
+                        alert(nota+"Ingreso un nùmero erroneo");
 
         }
 } else {
-        alert("Introduzca un nùmero valido");    
+        alert(nota+"Introduzca un nùmero valido");    
 }
