@@ -10,11 +10,13 @@ Nota: usar confirm() https://www.w3schools.com/jsref/met_win_confirm.asp
 // document.write(texto=texto+" - ");
 
 //confir (true); //lo inicializo en true 
+let texto;
+let texto2;
  do {
-            let texto = prompt("Ingrese el texto");
-            console.log(texto.concat(" - "+ texto+" - "));
-//             texto=texto+" - "+texto+" - ";
+            texto = prompt("Ingrese el texto");
+            texto=texto.concat(" - ");
+            //texto=" - "+texto+" - ";
+            document.write(texto);
  } while (confirm("Seleccione OK para seguir ingresando cadenas de texto, caso contrario precione cancelar") == true);
- document.write(texto.concat(" - "+ texto));
-  
- document.write(texto);
+ //document.write(texto.concat(" - "+ texto));
+ //document.write(`<br>`+texto);
