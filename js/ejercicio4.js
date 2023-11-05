@@ -5,19 +5,15 @@ con “cancelar” deberá indicarse la suma total de los números introducidos.
  */
 
 let num;
-let num1=0;
-
-while (confirm("Desea ingresar un número?") === true) {
-  num = parseInt(prompt("Ingrese un numero"));
+do {
+  num = parseInt(prompt("Ingrese un número"));
   console.log(num);
-  if (num != NaN) {
-    document.write(num);
-    prompt(confirm("Desea seguir ingresando números?"));
+  if (!isNaN(num)) {
     console.log(num);
-    num1 = num1 + num;
+    num = num + num;
+    console.log(num);
   } else {
     alert("Ingrese un valor valido");
-    console.log(num);
   }
-}
-document.write('<br>'+num1);
+} while (confirm("Desea seguir ingresando números") != false);
+document.write("La suma de todos los numeros ingresados es: " + num);
