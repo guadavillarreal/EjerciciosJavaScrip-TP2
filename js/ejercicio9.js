@@ -24,7 +24,6 @@ while (num <= 500) {
   if (num % 9 === 0) {
     document.write(" (Multiplo de 9)");
   }
-
   if (num % 5 === 0) {
     document.write("<br> ----------------- <br>");
   }
