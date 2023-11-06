@@ -11,11 +11,17 @@ let columnas;
 filas = prompt("Ingrese la cantidad de filas");
 columnas = prompt("Ingrese la cantidad de columnas");
 num = filas * columnas;
-for (let index = 0; index < filas; index++) {
-  for (let j = 0; j < columnas; j++) {
-    document.write(num);
-    document.write("--");
+
+document.write(`<table><tbody>`);
+for (let index = 0; index < filas; index++){
+  document.write(`<tr>`);
+  for (let j = 0; j < columnas; j++){
+    document.write(`<td>${num}</td>`);
+    //document.write(num);
+    //document.write("--");
     num--;
   }
-  document.write("<br>");
+  document.write(`</tr>`);
+  //document.write("<br>");
 }
+document.write(`</tbody></table>`);
