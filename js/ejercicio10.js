@@ -6,16 +6,16 @@ de 7×5 los números irán del 35 al 1.
 Ejercicios con Math
 */
 
-let filas ;
+let filas;
 let columnas;
-filas=prompt("Ingrese la cantidad de filas");
-columnas=prompt("Ingrese la cantidad de columnas");
-num=filas*columnas;
-for (let index = 0; index <filas ; index++) {
-    for (let j = 0; j < columnas ; j++) {
-        document.write(num);
-        document.write("--");
-        num--;
-    }        document.write("<br>");  
-
+filas = prompt("Ingrese la cantidad de filas");
+columnas = prompt("Ingrese la cantidad de columnas");
+num = filas * columnas;
+for (let index = 0; index < filas; index++) {
+  for (let j = 0; j < columnas; j++) {
+    document.write(num);
+    document.write("--");
+    num--;
+  }
+  document.write("<br>");
 }
