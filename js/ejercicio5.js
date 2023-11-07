@@ -10,3 +10,24 @@ Deberá de repetirse el proceso hasta que el usuario pulse «cancelar».
 
 Ejemplo:    Input:  40773821                Output: ‘L’
 */
+
+let dni;
+let index = 0;
+let letradni;
+let confirmacion;
+
+while (confirmacion != false) {
+
+  dni = prompt("Ingrese el número de dni");
+
+  if (dni >= 0 || dni <= 99999999 && !isNaN(dni)) {
+    letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+    index = dni % 23;
+    letradni = letras.charAt(index);
+  } else {
+    alert("Ingrese un número valido");
+  }
+  confirmacion = confirm("Desea seguir ingresando?");
+}
+document.write(
+  "Con el número de dni " + dni + " la letra correspondiente es: " + letradni);
